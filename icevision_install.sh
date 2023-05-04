@@ -22,7 +22,7 @@ case ${target} in
    cuda11)  
       echo "Installing icevision + dependencices for ${1}"
       echo "- Installing torch and its dependencies"
-      pip install torch==1.10.0+cu111 torchvision==0.11.1+cu111 torchtext==0.11.0 -f https://download.pytorch.org/whl/torch_stable.html --upgrade 
+      pip install torch==1.11.0+cu111 torchvision==0.11.1+cu111 torchtext==0.11.0 -f https://download.pytorch.org/whl/torch_stable.html --upgrade 
 
       echo "- Installing mmcv"
       pip install mmcv-full==1.3.17 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.10.0/index.html --upgrade -q  
@@ -31,7 +31,7 @@ case ${target} in
    cpu)  
       echo "Installing icevision + dependencices for ${1}"
       echo "- Installing torch and its dependencies"
-      pip install torch=="1.10.0+cpu" torchvision=="0.11.1+cpu" torchtext==0.11.0 -f https://download.pytorch.org/whl/torch_stable.html  
+      pip install torch=="1.11.0+cpu" torchvision=="0.11.1+cpu" torchtext==0.11.0 -f https://download.pytorch.org/whl/torch_stable.html  
 
       echo "- Installing mmcv"
       pip install mmcv-full=="1.3.17" -f https://download.openmmlab.com/mmcv/dist/cpu/torch1.10.0/index.html --upgrade -q  
